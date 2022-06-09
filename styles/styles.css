@@ -1,152 +1,124 @@
-* {
-    box-sizing: border-box;
-  }
-  
-  /* Estilos Header */
-  
-  .nome-site {
-    text-transform: uppercase;
-    color: #212529;
-    font-size: 14px;
-    text-decoration: none;
-    letter-spacing: 0.0625em;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
 
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #ffffff;
-  }
-  
-  .navbar-links {
-    height: 100%;
-  }
-  
-  .navbar-links ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-  .nav-item {
-    display: inline;
-    padding: 0 30px 0 0;
-  }
-  
-  .nav-link {
-    text-transform: uppercase;
-    color: #212529;
-    font-size: 14px;
-    text-decoration: none;
-    letter-spacing: 0.0625em;
-  }
-  
-  .nav-item a:hover {
-    color: tomato;
-  }
-  
-  .toggle-button {
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-    color: tomato;
-  }
-  
-  .toggle-button .bar {
-    height: 3px;
-    width: 100%;
-    background-color: tomato;
-    border-radius: 10px;
-  }
-  
-  .img-header {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100%;
-    height: auto;
-    width: auto;
-  }
-  
-  /* Media query barra de navegaçao */
-  
-  @media (max-width: 600px) {
-    .navbar {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .toggle-button {
-      display: flex;
-    }
-  
-    .navbar-links {
-      display: none;
-      width: 100%;
-    }
-  
-    .navbar-links ul {
-      width: 100%;
-      flex-direction: column;
-    }
-  
-    .navbar-links ul li {
-      text-align: center;
-    }
-  
-    .navbar-links ul li a {
-      padding: 0.5rem 1rem;
-    }
-  
-    .navbar-links.active {
-      display: flex;
-    }
-  
-    .img-header {
-      display: none;
-    }
-  }
+:root {
+  --primary-color: #161032;
+  --secondary-color: #E7AD99;
+  --primary-text-color: #82667F;
+  --secondary-text-color: #82667F;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
 body {
-  font-family: Montserrat, sans-serif;
-  display: grid;
+  font-family: "Lato", sans-serif;
+  color: var(--primary-text-color);
+  line-height: 1.6;
 }
 
-.who-am-i {
+ul {
+  list-style: none;
+
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+
+h1, h2 {
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+}
+
+
+/* Navbar */
+
+.navbar {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  height: 70px;
+  text-transform: uppercase;
+}
+
+.navbar ul {
   display: flex;
-  margin: 10px;
-  justify-content: flex-start;
+}
+
+.navbar a {
+  color: var(--secondary-text-color);
   padding: 10px;
+  margin 0 5px;
 }
 
-.projects {
-  display: flex;
-  margin: 10px;
+.navbar a:hover {
+  color:var(--secondary-color);
+  border-bottom: 2px var(--secondary-color) solid;
+}
+
+.navbar .flex {
   justify-content: space-between;
-  padding: 10px;
+  overflow: hidden;
 }
 
-img.framed {
-  box-shadow:
-    -30px -30px 0 -20px tomato,
-    30px 30px 0 -20px tomato;
+
+/* Header */
+
+.header {
+  height: 450px;
+  background-color: var(--primary-color);
+  position: relative;
+}
+
+.header h1 {
+  font-size: 2rem;
+}
+
+.header p {
+  padding: 10px 20px 0 0;
+  text-align: justify;
+}
+
+.header img {
   border-radius: 50%;
-  margin-left: 20px;
-  height: 200px;
+  box-shadow:
+  -50px -50px 0 -40px var(--secondary-color),
+  50px 50px 0 -40px var(--secondary-color);
 }
 
-footer {
+/* Utilitarios */
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+
+.flex {
   display: flex;
-  margin: 10px;
-  justify-content: space-between;
-  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }

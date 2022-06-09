@@ -1,67 +1,45 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-        
-        <!-- Folha de Estilo CSS-->
-        <link rel="stylesheet" href="styles/styles.css">
-                
-        <!-- Fonts Awesome Icons-->
-        <script src="https://kit.fontawesome.com/d76c002cff.js" crossorigin="anonymous"></script>
-
-        <!--Título-->
-        <title>Portfólio Gabriel C. Araujo</title>
-
-        <!--Scripts JS-->
-        <script src="scripts/script.js" defer></script>
-
-    </head>
-
-    <body>
-    
-    <nav id="top-nav" class="navbar">
-
-        <div class="nome-site">
-            <p class="nav-item">Portfolio</p>
-        </div>
-
-        <a href="#" class="toggle-button">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </a>
-
-        <div class="navbar-links">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="styles/styles.css">
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio | Gabriel Cardoso Araujo</title>
+</head>
+<body>
+    <!--Navbar-->
+    <div class="navbar">
+        <div class="container flex">
+            <h1 class="logo">
+                GCA.
+            </h1>
             <ul>
-                <li class="nav-item"><a class="nav-link" href="#inicio">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#portfolio">Work</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contato">Contact</a></li>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Projetos">Projetos</a></li>
+                <li><a href="#Contato">Contato</a></li>
             </ul>
         </div>
-    </nav>
+    </div>
 
-    <div>
-        <div class="who-am-i">
-            <div>
-                <p>Opa, Tudo bem?! Eu sou,</p>
-                <h2><strong>Gabriel Cardoso Araujo</strong></h2>
-                <p>Estudante de Desenvolvimento Web Full Stack, brasileiro, baseado em Jundiaí/SP</p>
+    <!--Header-->
+    <section class="header">
+        <div class="container grid">
+            <div class="header-text">
+                <h1>Eu Sou Gabriel,</h1>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
+                <a href="" class="btn btn-borda">Curriculo</a>
             </div>
-            <img class="framed" src="img/gabrielca.jpg" alt="Foto Gabriel Cardoso Araujo">
+
+            <div>
+                <img class="foto-capa" src="img/gabrielca.jpg" alt="">
+            </div>
+
         </div>
-    </div>
+    </section>
 
-    <div class="projects">
-        <h2>Projetos Atuais</h2>
-    </div>
-        
-    <footer>
-        <h2>Contato</h2>
-        
-    </footer>
-
-
-    </body>
+</body>
 </html>
